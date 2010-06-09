@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+    background-color: black;
+}
+
+/* Required for WebKit :( */
+#body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#window {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px #333 solid;
+    position: absolute;
+    width: 536px;
+    height: 536px;
+    margin-left: -268px;
+    margin-top: -268px;
+    left: 50%;
+    top: 50%;
+    background-color: #111;
+}
+
+#window .cell {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px #333 solid;
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    margin: 20px 0 0 20px;
+}
+
+#window .cell.parent {
+    border-color: #2A78B0;
+}
+
+#window .cell:hover {
+    background-color: #444;
+    cursor: pointer;
+}
