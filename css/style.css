@@ -18,6 +18,59 @@ body {
     background-color: black;
 }
 
+#menu {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    border-bottom: 1px #444 solid;
+    background-color: #222;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 4px;
+    color:  #2A78B0;
+    z-index: 100;
+}
+
+#bottom-menu {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    border-top: 1px #444 solid;
+    background-color: #222;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 1px;
+    color:  #2A78B0;
+    line-height: 18px;
+    text-shadow: 0 0 2px #444;
+    bottom: 0px;
+    z-index: 100;
+}
+
+.left-arrow {
+    display: inline-block;
+    border-color: transparent #2A78B0 transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    width: 0;
+    height: 0;
+}
+
+.right-arrow {
+    display: inline-block;
+    border-color: transparent transparent transparent #2A78B0;
+    border-style: solid;
+    border-width: 10px;
+    width: 0;
+    height: 0;
+}
+
+#menu:hover {
+    background-color: #333;
+}
+
 #window {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -26,8 +79,8 @@ body {
     position: absolute;
     width: 536px;
     height: 536px;
-    margin-left: -268px;
-    margin-top: -268px;
+    margin-left: -269px;
+    margin-top: -269px;
     left: 50%;
     top: 50%;
     background-color: #111;
@@ -52,4 +105,45 @@ body {
 #window .cell:hover {
     background-color: #444;
     cursor: pointer;
+}
+
+#save-1 {
+    margin-left: -441px;
+}
+
+#save-1 {
+
+}
+
+#save-2 {
+    margin-left: 289px;
+}
+
+.save-cell {
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    margin-top: -76px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    border: 1px #333 solid;
+    background-color: #222;
+    cursor: pointer;
+}
+
+.save-cell div {
+    position: absolute;
+    top: -30px;
+    width: 152px;
+    height: 20px;
+    text-align: center;
+    color:  #2A78B0;
+    text-shadow: 0 0 4px #444;
+}
+
+.target {
+    border-color: #2A78B0;
 }
